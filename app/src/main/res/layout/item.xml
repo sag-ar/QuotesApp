@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        app:cardBackgroundColor="#f4f4f3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TV_quotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/kimberly"
+                android:gravity="center_horizontal"
+                android:text="Programmers are the best in the world no one can change them"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp"
+                ></TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/TV_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_quotes"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="Author"
+        android:fontFamily="@font/kimberly"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>
